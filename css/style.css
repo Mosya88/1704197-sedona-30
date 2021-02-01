@@ -1,16 +1,16 @@
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url("/fonts/PTSans.woff2.woff2") format("woff2"),
-       url("/fonts/PTSans.wofff.woff") format("woff");
+  src: url("../fonts/PTSans.woff2.woff2") format("woff2"),
+       url("../fonts/PTSans.wofff.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-}
+
 @font-face {
   font-family:  "PT Sans Narrow";
-  src: url("/fonts/PTSans-Bold.woff2") format("woff2"),
-       url("/fonts/PTSans-Bold.woff") format("woff");
-       font-weight: 700;
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -21,49 +21,41 @@
 --basic-blue: #81B3D2;
 --basic-brown: #766357;
 --basic-black:#000000;
---basic-color: #333333;
+--basic-dark-brown: #333333;
 }
 
 /* Global */
-.ppage-body {
+ body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: 700;
   text-transform: uppercase;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: var(--basic-white);
-}
+ }
 
   a {
     text-decoration: none;
   }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+  img {
+    max-width: 100%;
+    height: auto;
 
 /*main-navigation*/
 
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: black;
-  background-color: transparent;
-}
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: black
-}
+  .main-navigation {
+   font-size: 14px;
+   line-height: 26px;
+   background: white;
+   color: #000000;
+  }
+  .site-navigation {
+    list-style: none;
+  }
 
 
 /* Features */
@@ -73,33 +65,36 @@ h1 {
   text-align: center;
   color: #000000;
 }
-.features {
+
+.five-features {
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
   color: #333333;
 }
 .features-list-img {
-  list-style: none;
+    width: 400px;
+    height: 256px;
+    background: #81B3D2;
 }
+
 .feature-item-img h3{
   font-size: 21px;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+  background: #81B3D2;
 }
 .feature-text-img {
   font-size: 14px;
 line-height: 21px;
 color: #FFFFFF;
 }
-.features-list-icon{
-  list-style: none;
-}
-.features-item-icon h3{
+
+.features-item-icon h3 {
   font-size: 21px;
  line-height: 21px;
  color: black;
-
 }
 
 .features-text-icon {
@@ -129,43 +124,54 @@ color: #000000;
 }
 /* Modal */
 .modal {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  color: black;
+  background-color: white;
   background-position: absolute;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 .button-search {
   font-size: 21px;
-line-height: 26px;
-color: #FFFFFF;
+  line-height: 26px;
+  color: #FFFFFF;
+  background: #766357;
 }
 
 .search-item {
   font-size: 14px;
 line-height: 26px;
-color: var(--basic-black);
+color: black;
 }
+
 .button-total{
  font-size: 21px;
  line-height: 26px;
+ color: #FFFFFF;
+ background: #81B3D2;
+
 }
  .button-total: hover,
  .button-total: focus {
-  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+  background: #81B3D2;
+  color: #FFFFFF;
   }
 
 
 
 /* Main footer */
 .main-footer {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  color: black;
+  width: 1200px;
+  height: 120px;
   background-image: url("../img/map.jpg.jpg");
-  background-position: var(--basic-white);
+  background: rgba(255, 255, 255, 0.9);
 }
 .footer-contacts a {
-  color: var(--basic-black);
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
 }
 /* Social button */
 
@@ -174,9 +180,20 @@ color: var(--basic-black);
 }
 .social-button:hover,
 .social-button:focus {
-  background-color: var(--basic-blue) ;
+  background-color: blue ;
 }
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.footer-copyright:hover,
+.footer-copyright:focus {
+  color: black;
+  background-color: white;
+}
+.footer-copyright {
+font-size: 14px;
+line-height: 26px;
+color: #000000;
+}
+.button-logo:hover,
+.button-logo:focus {
+  color: black;
+  background-color : white;
+}
