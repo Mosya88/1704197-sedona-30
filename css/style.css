@@ -52,7 +52,8 @@
    font-weight: bold;
    text-transform: uppercase;
    color: var(--basic-black);
-  }
+   background-color: var(--basic-white);
+}
 .container {
   background-image: url("/img/background photo.jpg")
 }
@@ -209,4 +210,147 @@ color: #EEEEEE;
   line-height: 26px;
   color: var(--basic-black);
   font-weight: bold;
+}
+/*parameters*/
+.legend-parameters {
+  font-weight: 700px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+ }
+.label-pool {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.label-parking{
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.label-wi-fi {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.label-hotel {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.label-motel {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.label-apartments {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.legend-text {
+  font-weight: 700px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+.input-price {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.search-submit-sum {
+  font-weight: 400px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+/*div-info*/
+.info-text {
+  font-weight: 700px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.info-number {
+  font-weight: 700px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.info-desc {
+  font-weight: 400px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.item-price-link {
+  font-weight: 400px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+}
+.item-type-link {
+  font-weight: 400px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.item-rating-link {
+  font-weight: 400px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+/*catalog-list*/
+.catalog-item-name {
+  font-weight: 700px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.catalog-text {
+  font-weight: 400px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-grey);
+  background-color: var(--basic-white);
+}
+.catalog-price {
+  font-weight: 400px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-grey);
+  background-color: var(--basic-white);
+}
+.desc-info-link {
+  font-weight: 700px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.desc-check-link {
+  font-weight: 700px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+.meta-text {
+  font-weight: 400px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #F2F2F2;
+}
+.meta-number {
+  font-weight: 400px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #F2F2F2;
 }
