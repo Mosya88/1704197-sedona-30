@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon/180.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/favicon/180.png">
+  <link rel="manifest" href="/manifest.json">
 
 </head>
 
@@ -21,168 +21,166 @@
         <img src="img/logo.svg" width="138" height="70" alt="Логотип городка «SEDONA»">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li><a class="nav-link" href="#">Информация</a></li>
+        <li><a class="nav-link" href="#">Фото и видео</a></li>
+        <li><a class="nav-link" href="#">Карта штата</a></li>
+        <li><a class="nav-link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
     <a>
-      <img src="img/welcome.png" width="456.65" height="350.88" alt="Приветсвие">
+      <img src="img/welcome.png" width="458" height="352" alt="Приветсвие">
     </a>
+
     <h1>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+
     <section class="features">
-      <p class="five-features">Рассмотрим 5 причин,по которым седона, круче чем гранд каньон</p>
+      <p class="features-main">Рассмотрим 5 причин,по которым седона, круче чем гранд каньон</p>
       <h2> Причины</h2>
-      <ul class="features-list-img">
-        <li class="feature-item-img">
-          <div>
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="feature-text-img">-№1-</p>
-            <p class="feature-text-img">СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>
+
+      <ul class="features-list">
+         <li class="feature-item">
+          <div class="feature-item-wrap">
+            <div class="feature-desc">
+            <h3 class="feature-subject-white">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="features-number-white">-№1-</p>
+            <p class="feature-text-white">СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <p class="feature-desc-img">
               <img src="img/image.jpg" width="800" height="256" alt="Картинка c видом на отель">
             </p>
           </div>
-        </li>
-      </ul>
-      <ul class="features-list-icon">
-        <li class="features-item-icon">
-          <div>
-            <p>
+         </li>
+         <ul class="dopfeatures-list">
+          <li class="dopfeature-item">
+            <p class="dopfeature-desc-pic">
               <img src="img/icon-1.svg" width="75" height="72" alt="Домик">
             </p>
-            <h3>Жилье</h3>
-            <p class="features-text-icon"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="dopfeature-title">Жилье</h3>
+            <p class="dopfeature-text"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="features-item-icon">
-          <p>
+        <li class="dopfeature-item">
+          <p class="dopfeature-desc-pic">
             <img src="img/icon-2.svg" width="75" height="70" alt="Бургер">
           </p>
-          <h3>Еда</h3>
-          <p class="features-text-icon"> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <h3 class="dopfeature-title">Еда</h3>
+          <p class="dopfeature-text"> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="features-item-icon">
-          <p>
+        <li class="features-item">
+          <p class="dopfeature-desc-pic">
             <img src="img/icon-3.svg" width="64" height="77" alt="Подарок">
           </p>
-          <h3>Сувениры</h3>
-          <p class="features-text-icon"> Не только китайского, но и местного производства!</p>
-          </div>
+          <h3 class="dopfeature-text">Сувениры</h3>
+          <p class="dopfeature-text"> Не только китайского, но и местного производства!</p>
         </li>
       </ul>
       <ul>
-        <li>
-          <div>
-            <p>
+        <li class="feature-item">
+          <div class="feature-item-wrap">
+            <p class="feature-desc-img">
               <img src="img/image _1.jpg" width="800" height="256" alt="Картинка мост дьявола">
             </p>
           </div>
-        </li>
-        <li class="feature-item-img">
-          <div>
-            <h3>Там есть мост дьявола</h3>
-            <p class="feature-text-img">-№2-</p>
-            <p class="feature-text-img">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="feature-desc">
+          <h3 class="feature-subject-white">Там есть мост дьявола</h3>
+            <p class="features-number-white">-№2-</p>
+            <p class="feature-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
-      </ul>
-      <ul class="features-list">
-        <li class="feature-item">
-          <h3>Небольшая прощадь</h3>
-          <p class="feature-text">-№3-</p>
+        <li>
+         <div class="feature-desc">
+          <h3 class="feature-subject">Небольшая прощадь</h3>
+          <p class="feature-number">-№3-</p>
           <p class="feature-text">Все достопримечательности находятся очень близко</p>
+         </div>
         </li>
-        <li class="feature-item">
-          <h3>Красивая дорога</h3>
-          <p class="feature-text">-№4-</p>
+        <li>
+         <div class="feature-desc">
+          <h3 class="feature-subject">Красивая дорога</h3>
+          <p class="feature-number">-№4-</p>
           <p class="feature-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </div>
         </li>
-        <li class="feature-item">
-          <h3>Мало туристов</h3>
-          <p class="feature-text">-№5-</p>
+        <li>
+        <div class="feature-desc">
+          <h3 class="feature-subject"> Мало туристов</h3>
+          <p class="feature-number">-№5-</p>
           <p class="feature-text">Большинство едет в гранд каньон и толпится там</p>
+        </div>
         </li>
       </ul>
-    </section>
+   </section>
     <section class="modal">
       <h2>поисковая панель</h2>
-      <strong class="text">ЗАИНТЕРЕСОВАЛИСЬ?</strong>
+      <strong class="modal-strong">ЗАИНТЕРЕСОВАЛИСЬ?</strong>
       <p class="modal-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <button class="button-search" type="button">Поиск гостиницы в седоне</button>
-      <div>
+      <div class="modal-popup">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-item">
-            <label for="search-start">Дата заезда</label>
-            <input id="search-start" type="text" name="trip-start" placeholder="27 АПРЕЛЯ 2017">
-            <button class="button-start">календарь</button>
+            <label class="search-label" for="search-start">Дата заезда</label>
+            <input class="search-input" id="search-start" type="text" name="trip-start" placeholder="27 АПРЕЛЯ 2017">
+            <button class="search-btn-calendar">календарь</button>
           </p>
           <P class="search-item">
-            <label for="search-finish">Дата выезда</label>
-            <input id="search-finish" type="text" name="trip-finish" placeholder="4 ИЮЛЯ 2017">
-            <button class="button-finish">календарь</button>
+            <label class="search-label" for="search-finish">Дата выезда</label>
+            <input class="search-input" id="search-finish" type="text" name="trip-finish" placeholder="4 ИЮЛЯ 2017">
+            <button class="search-btn-calendar">календарь</button>
           </P>
           <p class="search-item">
-            <label for="search-people">Взрослые</label>
-            <button class="button-minus">-</button>
+            <label class="search-label" for="people">Взрослые</label>
+            <button class="search-btn-minus">-</button>
             <input id="people" type="number" name="guests" placeholder="2">
-            <button class="button-plus">+</button>
+            <button class="search-btn-plus">+</button>
           </p>
           <p class="search-item">
-            <label for="children">Дети</label>
-            <button class="button-minus">-</button>
+            <label class="search-label" for="children">Дети</label>
+            <button class="search-btn-minus">-</button>
             <input id="children" type="number" name="guests" placeholder="0">
-            <button class="button-plus">+</button>
+            <button class="search-btn-plus">+</button>
           </p>
-          <p>
-            <button class="button-total" type="submit">Найти</button>
+          <p class="search-submit-wrap">
+            <button class="search-submit" type="submit">Найти</button>
           </p>
         </form>
       </div>
     </section>
-    <section>
+    <section class="map">
       <h2>Как нас найти?</h2>
-      <p>
-        <a href="#">Ссылка на интерактивную карту</a>
-        <img src="img/map.jpg" width="1199" height="594" alt="Штат Аризова город Седона">
+      <p class="map-wrap">
+        <a class="map-link" href="#">
+        <img class="map-img" src="img/map.jpg" width="1199" height="594" alt="Штат Аризова город Седона">
       </p>
     </section>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
       <h2>Контактная информация</h2>
-       <p class="footer-contacts"> #VISITSEDONA</p>
-        <p>Тел: <a  href="tel:+74956660166">+7 495 666-01-66</a>
+       <p class="contacts"> #VISITSEDONA</p>
+        <p class="phone">Тел: <a class="phone-link" href="tel:+74956660166"> +7 495 666-01-66</a>
         </p>
     </section>
-    <section class="footer-cosial">
+    <section class="socials">
       <h2>Мы в социальных сетях</h2>
-      <ul>
-        <li>
-          <a class="social-button" href="#">Твиттер</a>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link-twitter" href="#">Твиттер</a>
         </li>
-        <li>
-          <a class="social-button" href="#">Фейсбук</a>
+        <li class="social-item">
+          <a class="social-link-fb" href="#">Фейсбук</a>
         </li>
-        <li>
-          <a class="social-button" href="#">Ютюб</a>
+        <li class="social-item">
+          <a class="social-link-ytb" href="#">Ютюб</a>
         </li>
       </ul>
     </section>
-    <section>
-      <p class="footer-copyright"> WEBSITE BY <a href="https://htmlacademy.ru">HTML Academy</a>
-        <a class="button-logo">
-          <button>
-          <img src="img/logo-htmlacademy.svg" width="115" height="41 alt=" Логотип академии">
-          </button>
+    <section class="copyright">
+      <p class="copyright-text"> WEBSITE BY <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="copyright-logo">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии">
         </a>
       </p>
     </section>
