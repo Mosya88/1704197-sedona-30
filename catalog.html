@@ -8,8 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/favicon/180.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="./favicon/180.png">
+    <link rel="manifest" href="/manifest.webmanifest.json">
   </head>
 
   <body class="page-body-catalog">
@@ -29,7 +29,7 @@
     </header>
   <main class="page-catalog container">
     <h2>критерии поиска</h2>
-    <section class="filters">
+    <section class="filters-desc-img">
       <form  class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend class="legend-parameters"> Инфраструктура:</legend>
@@ -47,7 +47,9 @@
               <label class="label-wi-fi" for="filter-wi-fi">wi-fi</label>
             </li>
           </ul>
-            <legend class="legend-parameters"> Тип жилья:</legend>
+        </fieldset>
+        <fieldset>
+          <legend class="legend-parameters"> Тип жилья:</legend>
             <ul class="parameters-list">
             <li class="parameter-item">
               <input class="parameter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -65,16 +67,17 @@
         </fieldset>
         <fieldset>
           <legend class="legend-text">Стоимость в сутки (Р): </legend>
-          <input class="input-price" type="range" id="price" name="price" span="от 0 до 3000">
+          <input class="input-price" type="range" id="price" name="price" value="от 0 до 3000">
         </fieldset>
         <button class="search-submit-sum" type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <h2>Результаты поиска</h2>
       <div class="div-info">
         <p class="info-text"> Найдено:<span class="info-number">3</span> </p>
         <p class="info-desc"> Сортировка:</p>
-        <ul cclass="breadcrumbs-list">
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="item-price-link" href="#">По цене</a>
           </li>
@@ -98,11 +101,11 @@
         <li class="catalog-item">
           <article class="catalog-item-wrap">
             <p class="catalog-desc-jpg">
-              <img src="img/layer 211.jpg" width="135" height="90" alt="Картинка отеля «Amara resort & spa»">
+              <img src="img/layer_211.jpg" width="135" height="90" alt="Картинка отеля «Amara resort & spa»">
               </p>
             <div class="catalog-info">
               <h3 class="catalog-item-name"><a class="catalog-link" href="#">Amara resort & spa</a></h3>
-              <p class="catalog-text"><span>Гостиница</span><span class="catalog-price">от 4000 Р.</span>
+              <p class="catalog-text"><span>Гостиница</span> <span class="catalog-price">от 4000 Р.</span>
               </p>
               <p class="desc-info">
                 <a class="desc-info-link" href="#">Подробнее</a>
@@ -118,11 +121,11 @@
         <li class="catalog-item">
           <article class="catalog-item-wrap">
             <p class="catalog-desc-jpg">
-              <img src="img/layer 899.jpg" width="135" height="90" alt="Картинка мотеля Desert quail inn">
+              <img src="img/layer_899.jpg" width="135" height="90" alt="Картинка мотеля Desert quail inn">
             </p>
             <div class="catalog-info">
               <h3 class="catalog-item-name"><a class="catalog-link" href="#">Desert quail inn</a></h3>
-              <p class="catalog-text"><span> Мотель</span><span class="catalog-price">от 3000 Р.</span>
+              <p class="catalog-text"><span> Мотель</span> <span class="catalog-price">от 3000 Р.</span>
               </p>
               <p class="desc-info">
                 <a class="desc-info-link" href="#">Подробнее</a>
@@ -142,8 +145,7 @@
             </p>
             <div class="catalog-info">
               <h3 class="catalog-item-name"><a class="catalog-link" href="#">Villas poco Diablo</a></h3>
-              <p class="catalog-text"><span> Апартаменты</span><span class="catalog-price">от 2000 Р.</span>
-              </p>
+              <p class="catalog-text"><span> Апартаменты</span> <span class="catalog-price">от 2000 Р.</span></p>
               <p class="desc-info">
                 <a class="desc-info-link" href="#">Подробнее</a>
                 <a class="desc-check-link" href="#">Забронировать</a>
@@ -151,7 +153,7 @@
             </div>
             <div class="meta-info">
               <p class="meta-stars"><span>Две звезды</span></p>
-              <p class="meta-text">Рейтинг:<span class="meta-number">9,2</span></p>
+              <p class="meta-text">Рейтинг: <span class="meta-number"> 9,2</span></p>
             </div>
           </article>
         </li>
